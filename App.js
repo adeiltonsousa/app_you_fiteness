@@ -1,19 +1,15 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { View } from 'react-native'
+import AddEntry from './components/AddEntry'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Testando expo!</Text>
-    </View>
-  );
+// import { Ionicons } from '@expo/vector-icons'
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <View>
+        <AddEntry />
+      </View>
+    )
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
